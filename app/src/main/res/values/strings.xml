@@ -1,0 +1,7 @@
+    <resources>
+    <string name="app_name">My Application guia2</string>
+        <string name="resultado">Resultados:</string>
+        <string name="nombre">Digite su nombre:</string>
+        <string name="apellido">Digite su apellido</string>
+        <string name="enviar">Enviar</string>
+    </resources>
