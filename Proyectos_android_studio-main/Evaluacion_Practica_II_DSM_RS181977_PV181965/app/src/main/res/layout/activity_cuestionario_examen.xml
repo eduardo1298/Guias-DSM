@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CuestionarioExamen">
+
+
+            <LinearLayout
+                android:id="@+id/contenedor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/NombreExamen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cuestionario"
+                    android:textSize="25dp"
+                    android:textColor="#8E9295"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/codigoDeExamen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Código: xT4kH"
+                    android:textSize="24dp"
+                    android:textColor="#E4656467"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/linea"
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/contenedor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/contenedor3"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenedor1">
+
+                <TextView
+                    android:id="@+id/cantidadPreguntas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pregunta #1 de 1"
+                    android:textSize="18dp"
+                    android:textColor="#E4656467"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#BF3A3A3A"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tituloPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de la pregunta"
+                    android:textSize="20dp"
+                    android:textColor="#E4212122"
+                    android:fontFamily="@font/montserrat_light"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/ContenedorRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioopcion1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:textSize="18dp"
+                        android:text="Opción 1"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textColor="#E44E4A4A"
+
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioopcion2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:textSize="18dp"
+                        android:text="Opción 2"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textColor="#E44E4A4A"
+
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioopcion3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:textSize="18dp"
+                        android:text="Opción 3"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textColor="#E44E4A4A"
+
+
+                        />
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contenedor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor2"
+
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BotonTerminar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_boton"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:paddingLeft="75dp"
+            android:paddingRight="75dp"
+            android:text="Siguiente"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_forward_24"
+            android:drawablePadding="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

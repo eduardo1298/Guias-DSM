@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CalculadoraFracciones</string>
+    <string name="Titulo">Calculadora de fracciones</string>
+    <string name="Sumar">Suma</string>
+    <string name="Restar">Resta</string>
+    <string name="Multiplicar">Multiplicación</string>
+    <string name="Dividir">División</string>
+    <string name="Regresar">Regresar</string>
+    <string name="Operacion">Operación</string>
+    <string name="Resultado">Resultados</string>
+    <string name="Fraccion1">Ingrese la fracción 1</string>
+    <string name="Fraccion2">Ingrese la fracción 2</string>
+    <string name="TitulorResultado">Resultado</string>
+    <string name="Fraccion1Resultado">Fracción 1</string>
+    <string name="Fraccion2Resultado">Fracción 2</string>
+    <string name="Calcular">Calcular</string>
+</resources>

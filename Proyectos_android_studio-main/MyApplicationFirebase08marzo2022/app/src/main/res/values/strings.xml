@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application Firebase08-marzo-2022</string>
+    <string name="TituloPost">Titulo del Post</string>
+    <string name="DescripcionPost">Descripción Post</string>
+</resources>

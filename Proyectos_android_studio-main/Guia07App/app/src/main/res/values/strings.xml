@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Guia07App</string>
+    <string name="facebook_app_id">497488858635957</string>
+    <string name="fb_login_protocol_scheme">fb497488858635957</string>
+    <string name="facebook_client_token">31a26dc89ddf8a9717441f305b59777b</string>
+</resources>

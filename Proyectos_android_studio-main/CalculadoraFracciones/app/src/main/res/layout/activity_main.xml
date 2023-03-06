@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="48dp">
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="@string/Titulo"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/Fraccion01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="@string/Fraccion1" />
+
+        <EditText
+            android:id="@+id/Fraccion02"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="@string/Fraccion2"
+             />
+        <Button
+            android:id="@+id/BotonCalcular"
+            android:layout_margin="20dp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.4"
+            android:text="@string/Calcular"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

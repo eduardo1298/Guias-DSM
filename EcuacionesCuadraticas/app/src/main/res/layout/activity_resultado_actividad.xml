@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resultado_Actividad">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alignmentMode="alignBounds"
+        android:columnCount="1"
+        android:rowCount="5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
+        <TextView
+            android:id="@+id/texto1"
+
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_columnSpan="1"
+            android:textSize="26dp"
+            android:text="Resultados"
+            android:textColor="#2196F3"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/texto2"
+
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_columnSpan="1"
+            android:textSize="20dp"
+            android:text="Ecuación: ax2 + bx + c = 0"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/Resultadox1"
+
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="1"
+            android:textSize="20dp"
+            android:text="x1:"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/Resultadox2"
+
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="1"
+            android:textSize="20dp"
+            android:text="x2:"
+            android:padding="15dp"
+            />
+
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_row="4"
+            android:layout_column="0"
+
+
+            android:layout_gravity="center"
+
+            android:onClick="Regresar"
+            android:padding="20dp"
+            android:text="Volver" />
+
+
+    </GridLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

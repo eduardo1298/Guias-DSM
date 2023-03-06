@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppSalario</string>
+    <string name="TextSalario">Calcular</string>
+    <string name="BtnRegresar">Regresar</string>
+    <string name="Titulo">Calcular salario neto</string>
+
+</resources>

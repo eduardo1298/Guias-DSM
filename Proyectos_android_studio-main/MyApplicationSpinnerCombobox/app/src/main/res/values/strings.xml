@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My ApplicationSpinnerCombobox</string>
+    <string-array name="Lenguajes">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>C sharp</item>
+        <item>C standard</item>
+        <item>Python</item>
+        <item>PHP</item>
+    </string-array>
+    <string name="Pregunta">¿Cuál es tu lenguaje de programación favorito?</string>
+</resources>

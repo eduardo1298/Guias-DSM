@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ejemplo2</string>
+    <string name="title_activity_ejemplo_table_layout">ejemplo_table_layout</string>
+    <string name="salir">Salir</string>
+
+</resources>

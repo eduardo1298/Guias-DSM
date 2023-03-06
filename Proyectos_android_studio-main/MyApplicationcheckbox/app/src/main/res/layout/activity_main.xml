@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/idCompras"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="Compras"
+        app:layout_constraintBottom_toTopOf="@+id/idSeriesTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idleer" />
+
+    <CheckBox
+        android:id="@+id/idSeriesTv"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="373dp"
+        android:text="Ver series"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCompras" />
+
+    <CheckBox
+        android:id="@+id/idpasear"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:text="Pasear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSeriesTv" />
+
+    <CheckBox
+        android:id="@+id/idleer"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:text="Leer"
+        app:layout_constraintBottom_toTopOf="@+id/idCompras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="65dp"
+        android:text="¿Cuáles son tus pasatiempos favoritos?"
+        app:layout_constraintBottom_toTopOf="@+id/idleer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idpasear"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="51dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonEnviar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

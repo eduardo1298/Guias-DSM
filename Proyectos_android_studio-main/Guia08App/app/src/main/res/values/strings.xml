@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Guia08App</string>
+
+    <string-array name="Genero">
+        <item>Seleccione un género</item>
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+</resources>

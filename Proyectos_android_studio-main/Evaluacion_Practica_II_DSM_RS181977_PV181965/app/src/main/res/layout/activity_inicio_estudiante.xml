@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioEstudiante">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#65E0F7FA"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/contenedor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contenedor"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/Bienvenido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/Bienvenido"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.044" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/linearlayout1">
+
+                    <TextView
+                        android:id="@+id/UsuarioEstudiante"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/NombreUsuario"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.141" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/contenedor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/contenedor2"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenedor1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Acceder a examen"
+                    android:textAlignment="center"
+                    android:textColor="#DD000000"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/TextoEstudiante"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:text="@string/TextoEstudiante"
+                        android:textColor="#9F000000"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/linearlayout4"
+
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintAnimationEnabled="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.580">
+
+                        <EditText
+                            android:id="@+id/Codigo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="@string/Codigo"
+                            android:background="@color/white"
+                            android:drawableStart="@drawable/contrasena"
+                            android:drawableLeft="@drawable/contrasena"
+                            android:drawablePadding="16dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:hint="@string/Codigo"
+                            android:inputType="textPersonName"
+                            android:padding="30dp"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/linearlayout5"
+
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/IngresarExamen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/ic_boton"
+                        android:drawableLeft="@drawable/ic_in"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:paddingLeft="64dp"
+                        android:paddingRight="64dp"
+                        android:text="@string/Ingresar"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/contenedor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/contenedor2"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenedor2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Mis exámenes"
+                    android:textAlignment="center"
+                    android:textColor="#DD000000"
+                    android:textSize="24dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/TextoEstudiante2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:text="@string/TextoEstudiante2"
+                        android:textColor="#95000000"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/linearlayout6"
+
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/BotonHistorial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_boton4"
+                        android:drawableLeft="@drawable/ic_list3"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:paddingLeft="75dp"
+                        android:paddingRight="75dp"
+                        android:text="@string/Historial"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contenedor4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/contenedor2"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenedor3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Salir de la App"
+                    android:textAlignment="center"
+                    android:textColor="#DD000000"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Botoncerrarsesion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_boton3"
+                        android:drawableLeft="@drawable/ic_baseline_close_24"
+
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:paddingLeft="80dp"
+                        android:paddingRight="80dp"
+                        android:text="@string/CerrarSesion"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

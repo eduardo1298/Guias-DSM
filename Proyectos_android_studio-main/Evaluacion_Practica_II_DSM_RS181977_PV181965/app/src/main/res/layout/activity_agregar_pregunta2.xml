@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarPregunta2">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578">
+
+        <EditText
+            android:id="@+id/Opcion1texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/Opcion1"
+            android:inputType="textPersonName"
+            android:padding="30dp"
+            android:fontFamily="@font/montserrat_light"
+            app:backgroundTint="@color/white" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.860">
+
+        <EditText
+            android:id="@+id/Opcion3texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/Opcion3"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat_light"
+            android:padding="30dp"
+            app:backgroundTint="@color/white" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.710">
+
+        <EditText
+            android:id="@+id/Opcion2texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/Opcion2"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat_light"
+            android:padding="30dp"
+            app:backgroundTint="@color/white" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonCrearPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_boton"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:text="@string/AgregarPregunta"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:drawableLeft="@drawable/ic_save"
+        android:drawablePadding="10dp"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/indicacionFalsoyVerdadero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/IndicacionPregunta1"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158">
+
+        <EditText
+            android:id="@+id/Pregunta"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:drawableLeft="@drawable/pregunta"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/Pregunta"
+            android:inputType="textMultiLine"
+            android:padding="30dp"
+            android:textSize="20dp"
+            app:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/botonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/ic_regresar"
+        tools:ignore="VectorDrawableCompat" />
+
+    <RadioGroup
+        android:id="@+id/ContenedorRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804">
+
+        <RadioButton
+            android:id="@+id/radioopcion1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:checked="true"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/radioopcion2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/radioopcion3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="30dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

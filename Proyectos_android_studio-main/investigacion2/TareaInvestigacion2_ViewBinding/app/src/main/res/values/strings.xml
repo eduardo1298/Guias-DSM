@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TareaInvestigacion2_ViewBinding</string>
+
+    <string-array name="Planes">
+        <item>Seleccione un plan de estudio</item>
+        <item>Técnico en Ingeniería en Computación</item>
+        <item>Técnico en Desarrollo de Aplicaciones Móviles</item>
+        <item>Ingeniería en Ciencias de la Computación</item>
+        <item> Maestría en Arquitectura de Software</item>
+        <item> Maestría en Seguridad y Gestión de Riesgos Informáticos</item>
+    </string-array>
+
+</resources>

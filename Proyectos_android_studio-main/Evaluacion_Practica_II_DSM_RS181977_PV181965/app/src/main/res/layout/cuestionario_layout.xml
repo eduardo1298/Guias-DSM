@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/Pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la pregunta"
+        android:textSize="20dp"
+        android:textColor="#E4212122"
+        android:fontFamily="@font/montserrat_light"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+    <RadioGroup
+        android:id="@+id/ContenedorRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RadioButton
+            android:id="@+id/Opcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:text="Opción 1"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="#E44E4A4A"
+            android:clickable="false"
+
+            />
+
+        <RadioButton
+            android:id="@+id/Opcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:text="Opción 2"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="#E44E4A4A"
+            android:clickable="false"
+
+            />
+
+        <RadioButton
+            android:id="@+id/Opcion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="18dp"
+            android:text="Opción 3"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="#E44E4A4A"
+            android:clickable="false"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado de pregunta"
+        android:textSize="16dp"
+        android:textColor="#26A69A"
+        android:fontFamily="@font/montserrat_medium"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B7434343"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+</LinearLayout>
